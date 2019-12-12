@@ -1,1 +1,10 @@
 <h1>Burgers!</h1>
+
+<ul>
+    {{#each burgers}}
+    <li>
+        Name: {{ burger_name }}
+        Devoured: {{ devoured }}
+    </li>
+    {{/each}}
+</ul>
