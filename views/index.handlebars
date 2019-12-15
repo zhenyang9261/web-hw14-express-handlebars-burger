@@ -19,8 +19,10 @@
                 <div id="devour-false">
                     {{#each burgers}}
                     {{#unless devoured }}
-                    {{burger_name}}
-                    <button id="{{id}}" class="devour-btn">Devour!</button>
+                    <div class="burger-name">
+                        {{burger_name}}
+                        <button data-id="{{id}}" class="devour-btn">Devour!</button>
+                    </div>
                     {{/unless}}
                     {{/each}}
                 </div>
