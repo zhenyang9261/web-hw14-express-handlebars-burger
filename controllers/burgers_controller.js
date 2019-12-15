@@ -17,14 +17,10 @@ router.get("/", function(req, res) {
 });
 
 router.post("/api/burger", function(req, res) {
-  burger.insertOne(
-    ["burger_name", "devoured"],
-    [req.body.burger_name, req.body.devoured],
-    function(result) {
-      // Send back the ID
-      res.json({ id: result.insertId });
-    }
-  );
+  burger.insertOne(["burger_name"], [req.body.burger_name], function(result) {
+    // Send back the ID
+    res.json({ id: result.insertId });
+  });
 });
 
 router.put("/api/burger/:id", function(req, res) {
