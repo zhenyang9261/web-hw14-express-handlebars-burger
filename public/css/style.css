@@ -7,19 +7,23 @@ body {
 }
 
 .title {
-  color: goldenrod;
+  color: #ff4d4d;
   font-weight: bold;
 }
 
 .burger-name {
   background-color: white;
-  padding: 0.5rem 2rem;
-  margin: 0.5rem 1rem;
+  padding: 0.4rem 2rem;
+  margin: 0.4rem 1rem;
 }
 
 .devour-btn,
 .delete-btn {
   background-color: #ededed;
-  padding: 0.5rem 2rem;
-  margin: 0.5rem 1rem;
+  padding: 0.4rem 2rem;
+  margin: 0.4rem 1rem;
+}
+
+.new-burger {
+  margin-top: 1.5rem;
 }
