@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container burger-container">
 
     <div class="container main-section">
 
@@ -19,8 +19,8 @@
                 <div id="devour-false">
                     {{#each burgers}}
                     {{#unless devoured }}
-                    <div class="burger-name">
-                        {{burger_name}}
+                    <div class="burger-not-devoured">
+                        <span class="burger-name">{{burger_name}}</span>
                         <button data-id="{{id}}" class="devour-btn">Devour!</button>
                     </div>
                     {{/unless}}
@@ -30,7 +30,7 @@
             <div class="col-sm-6 col-xs-12">
                 <div id="devour-true">
                     {{#each burgers}}
-                    {{#if devoured}} <div> {{burger_name}} </div> {{/if}}
+                    {{#if devoured}} <div class="burger-name"> {{burger_name}} </div> {{/if}}
                     {{/each}}
                 </div>
             </div>
