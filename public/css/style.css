@@ -7,23 +7,28 @@ body {
 }
 
 .title {
+  margin-top: 2rem;
   color: #ff4d4d;
   font-weight: bold;
 }
 
 .burger-name {
   background-color: white;
-  padding: 0.4rem 2rem;
-  margin: 0.4rem 1rem;
+  padding: 0.2rem 0;
+  margin: 0.3rem 1rem;
+  display: inline-block;
+  width: 20rem;
+  overflow: hidden;
 }
 
 .devour-btn,
 .delete-btn {
   background-color: #ededed;
-  padding: 0.4rem 2rem;
-  margin: 0.4rem 1rem;
+  padding: 0.1rem 1rem;
+  margin: 0.3rem 1rem;
+  display: inline-block;
 }
 
 .new-burger {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
