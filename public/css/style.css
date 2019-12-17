@@ -7,9 +7,13 @@ body {
 }
 
 .title {
-  margin-top: 2rem;
+  margin: 2rem 0;
   color: #ff4d4d;
   font-weight: bold;
+}
+
+.burger {
+  display: flex;
 }
 
 .burger-name {
