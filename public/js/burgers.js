@@ -10,13 +10,19 @@ $(function() {
     };
 
     // Send the POST request.
-    $.ajax("/api/burger", {
-      type: "POST",
-      data: newBurger
-    }).then(function() {
-      // Reload the page to get the updated list
-      location.reload();
-    });
+    if (newBurger.burger_name) {
+      $.ajax("/api/burger", {
+        type: "POST",
+        data: newBurger
+      }).then(function() {
+        // Reload the page to get the updated list
+        location.reload();
+      });
+    } else {
+      $("#info").text("Burger name is required.");
+      $("#info").attr("style", "color: red;");
+      return;
+    }
   });
 
   $(".devour-btn").on("click", function(event) {
